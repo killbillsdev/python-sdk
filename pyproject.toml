@@ -4,11 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "killbills_sdk"
-version = "0.0.1"
+version = "0.0.1-beta.0"
 authors = [
     { name = "killbillsdev", email = "cto@killbills.co" }
 ]
 description = "KillBills e-receipt sdk"
+logo_url = "https://a.storyblok.com/f/149852/x/797a4a2b7e/dark_logo.svg"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -31,4 +32,5 @@ python = ">=3.7"
 requests = ">=2.26.0"
 pydantic = ">=2.0.3"
 hmac = "20101005"
+
 
