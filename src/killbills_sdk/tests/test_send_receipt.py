@@ -119,7 +119,7 @@ invalidPayload = {
 
 
 validPayload2 = {
-    "date": "2023-07-16T09:04:08",
+    "date": "2023-07-30T09:04:08",
     "mode": 0,
     "items": [
       {
@@ -220,7 +220,7 @@ validPayload2 = {
         "last_four": "0",
         "payment_type": "CB",
         "transaction_id": "null",
-        "transaction_date": "2023-07-16T09:04:08",
+        "transaction_date": "2023-07-30T09:04:08",
       },
     ],
     "partner_name": os.environ['TEST_POS_PARTNER_NAME'] ,
@@ -245,46 +245,46 @@ def test_send_receipt_Invalid_payload():
         "14 validation errors for ReceiptPayload\n"
         "reference_id\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "amount\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "currency\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "date\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "covers\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "table\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "invoice\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "mode\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "partner_name\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "merchant\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "store\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "taxes\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "items\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "payments\n"
         "  Field required [type=missing, input_value={'tt': 'toto'}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing"
         
     )
     assert str(exc_info.value) == expected_error_message

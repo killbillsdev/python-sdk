@@ -11,7 +11,7 @@ authors = [
 description = "KillBills e-receipt sdk"
 logo_url = "https://a.storyblok.com/f/149852/x/797a4a2b7e/dark_logo.svg"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -20,7 +20,8 @@ classifiers = [
 dependencies = [
     "requests>=2.26.0",
     "pydantic>=2.0.3",
-    "pytest>=7.4.0"
+    "pytest>=7.4.0",
+    "python-dotenv>=1.0.0"
 ]
 
 [project.urls]
@@ -30,6 +31,7 @@ Homepage = "https://github.com/killbillsdev/killbills-sdk-python"
 [dependencies]
 python = ">=3.7"
 requests = ">=2.26.0"
+python-dotenv = ">=1.0.0"
 pydantic = ">=2.0.3"
 hmac = "20101005"
 

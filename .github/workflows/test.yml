@@ -1,0 +1,33 @@
+name: test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.8"
+      - run: make install
+      - run: make test
+        env:
+          TEST_HMAC: ${{ secrets.TEST_HMAC }}
+          TEST_BANK_ID: ${{ secrets.TEST_BANK_ID }}
+          TEST_BILLING_DESCRIPTOR: ${{ secrets.TEST_BILLING_DESCRIPTOR }}
+          TEST_CALLBACK_URL: ${{ secrets.TEST_CALLBACK_URL }}
+          TEST_CUSTOMER_ID: ${{ secrets.TEST_CUSTOMER_ID }}
+          TEST_MERCHANT_NAME: ${{ secrets.TEST_MERCHANT_NAME }}
+          TEST_PARTNER_NAME: ${{ secrets.TEST_PARTNER_NAME }}
+          TEST_POS_NAME: ${{ secrets.TEST_POS_NAME }}
+          TEST_RECEIPT_FORMAT: ${{ secrets.TEST_RECEIPT_FORMAT }}
+          TEST_REFERENCE_ID: ${{ secrets.TEST_REFERENCE_ID }}
+          TEST_SIRET: ${{ secrets.TEST_SIRET }}
+          TEST_TRANSACTION_ID: ${{ secrets.TEST_TRANSACTION_ID }}
+          TEST_POS_HMAC: ${{ secrets.TEST_POS_HMAC }}
+          TEST_POS_PARTNER_NAME: ${{ secrets.TEST_POS_PARTNER_NAME }}
+          TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
+
+      

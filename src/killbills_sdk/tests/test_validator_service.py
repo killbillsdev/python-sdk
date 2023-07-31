@@ -1,6 +1,6 @@
 import pytest
 import os,time
-from validatorService import validate_receipt_payload, validate_transaction_payload
+from killbills_sdk.validatorService import validate_receipt_payload, validate_transaction_payload
 from dotenv import load_dotenv
 load_dotenv()
 
