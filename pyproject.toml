@@ -11,7 +11,7 @@ authors = [
 description = "KillBills e-receipt sdk"
 logo_url = "https://a.storyblok.com/f/149852/x/797a4a2b7e/dark_logo.svg"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
