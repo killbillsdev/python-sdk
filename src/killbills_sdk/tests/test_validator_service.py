@@ -1,9 +1,8 @@
 import pytest
 import os,time
 from killbills_sdk.validatorService import validate_receipt_payload, validate_transaction_payload
-import dotenv
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 invalidPayload = {
