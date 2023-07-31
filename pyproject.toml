@@ -19,8 +19,9 @@ classifiers = [
 ]
 dependencies = [
     "requests>=2.26.0",
-    "pydantic>=2.0.3",
-    "pytest>=7.4.0"
+    "pydantic>=2.1",
+    "pytest>=7.4.0",
+    "dotenv>=0.0.5",
 ]
 
 [project.urls]
@@ -31,7 +32,7 @@ Homepage = "https://github.com/killbillsdev/killbills-sdk-python"
 python = ">=3.7"
 requests = ">=2.26.0"
 dotenv = ">=0.0.5"
-pydantic = ">=2.0.3"
+pydantic = ">=2.1"
 hmac = "20101005"
 
 

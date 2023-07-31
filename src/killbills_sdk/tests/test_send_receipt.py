@@ -1,7 +1,7 @@
 import pytest
 import os,time,re
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 from sendReceipt import send_receipt
 
@@ -119,7 +119,7 @@ invalidPayload = {
 
 
 validPayload2 = {
-    "date": "2023-07-16T09:04:08",
+    "date": "2023-07-30T09:04:08",
     "mode": 0,
     "items": [
       {
@@ -220,7 +220,7 @@ validPayload2 = {
         "last_four": "0",
         "payment_type": "CB",
         "transaction_id": "null",
-        "transaction_date": "2023-07-16T09:04:08",
+        "transaction_date": "2023-07-30T09:04:08",
       },
     ],
     "partner_name": os.environ['TEST_POS_PARTNER_NAME'] ,
