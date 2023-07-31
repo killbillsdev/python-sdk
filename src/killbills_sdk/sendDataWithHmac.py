@@ -20,7 +20,7 @@ def send_data_with_hmac(env, endpoint, data, hmac_signature, validator):
         'Content-Type': 'application/json'
     }
 
-    url = f'https://in.{env + "." if env != "prod" else "."}killbills.{"dev" if env != "prod" else "co"}/{endpoint}'
+    url = f'https://in.{env + "." if env != "prod" else ""}killbills.{"dev" if env != "prod" else "co"}/{endpoint}'
     response = requests.post(url, data=json.dumps(data), headers=headers)
     response.raise_for_status()  # Raise an exception for HTTP errors (4xx, 5xx)
 
