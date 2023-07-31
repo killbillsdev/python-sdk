@@ -1,6 +1,6 @@
 import hashlib
 import unittest
-from cryptoService import cipher_hmac_payload
+from killbills_sdk.cryptoService import cipher_hmac_payload
 
 class TestCryptoService(unittest.TestCase):
 
