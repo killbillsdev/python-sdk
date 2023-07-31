@@ -1,8 +1,8 @@
 import pytest
 import os,time
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 
 from getStores import get_stores
 

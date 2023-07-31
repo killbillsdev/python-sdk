@@ -1,7 +1,7 @@
 import pytest
 import os,time,re
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 from sendReceipt import send_receipt
 
