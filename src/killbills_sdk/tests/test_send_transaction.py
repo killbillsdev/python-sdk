@@ -58,18 +58,18 @@ def test_send_banking_transaction_INvalid_payload():
         "5 validation errors for TransactionPayload\n"
         "bank_id\n"
         "  String should have at least 36 characters [type=string_too_short, input_value='1234', input_type=str]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/string_too_short\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/string_too_short\n"
         "partner_name\n"
         "  Field required [type=missing, input_value={'bank_id': '1234', 'call...illing_descriptor': ''}}, input_type=dict]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/missing\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/missing\n"
         "receipt_format\n"
         "  Input should be 'json','pdf','svg' or 'png' [type=enum, input_value='INVALID_FORMAT', input_type=str]\n"
         "transaction.amount\n"
         "  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=-10.5, input_type=float]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/int_from_float\n"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/int_from_float\n"
         "transaction.transaction_date\n"
         "  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='INVALID_DATE', input_type=str]\n"
-        "    For further information visit https://errors.pydantic.dev/2.0.3/v/int_parsing"
+        "    For further information visit https://errors.pydantic.dev/2.1/v/int_parsing"
     )
 
     assert str(exc_info.value) == expected_error_message
