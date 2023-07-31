@@ -29,8 +29,11 @@ pip install killbills-sdk
  
 #### Method getStores :
 ```python
-from getStores import get_stores
-print(get_stores('prod', 'your-api-key'))
+import killbills_sdk
+from killbills_sdk.getStores import get_stores
+
+print(get_stores('dev','your-api-key'))
+
 ```
 ##### Output:
 ```yaml
@@ -55,10 +58,14 @@ print(get_stores('prod', 'your-api-key'))
 ]
 ```
 # 
-#### Method sendBankingTransaction :
+#### Method sendTransaction :
 ##### note that the transactionData object only contains minimal required values see (insert link to all possibilities)
 ```python
+import killbills_sdk
+from killbills_sdk.sendTransaction import send_transaction
 
+payload = {...}
+print(send_transaction('dev',payload,'your-hmac-key'))
 ```
 ##### Output: 
 ```yaml
@@ -193,29 +200,6 @@ receiptData = {
     }]
 };
 ```
-
-## Demo
-
-Insert gif or link to demo (screen record video of differents méthods)
-
-### getStores Method :
-code : 
-
-result : 
-
-
-### sendBankingTransaction Method:
-code : 
-
-
-result : 
-
-
-
-
-
-
-
 
 ## Run Locally
 
