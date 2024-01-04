@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "killbills_sdk"
-version = "0.0.2.0"
+version = "0.0.3.0"
 authors = [
     { name = "killbillsdev", email = "cto@killbills.co" }
 ]
