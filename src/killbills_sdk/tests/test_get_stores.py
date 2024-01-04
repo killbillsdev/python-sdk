@@ -10,8 +10,8 @@ def test_get_stores_returns_list_of_dicts():
     env = 'dev'
     api_key = os.environ.get("TEST_API_KEY")
     result = get_stores(env, api_key)
-    assert isinstance(result, list)
-    for item in result:
+    assert isinstance(result, dict)
+    for item in result.items:
         assert isinstance(item, dict)
 
 def test_get_stores_returns_empty_when_nokey():
